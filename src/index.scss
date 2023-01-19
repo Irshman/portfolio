@@ -1,0 +1,124 @@
+// Подключаем шрифти
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+
+// Обнуляем стили
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-size: inherit;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Montserrat', serif;
+  font-size: 16px;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+$mainColor: #EC3D54;
+
+// Global
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.6rem 1.3rem;
+
+  @media (max-width:768px){
+    padding: .5rem .5rem;
+  }
+}
+
+.title {
+  color: $mainColor;
+  display: inline-block;
+  margin: .7rem 0 1.3rem;
+  position: relative;
+  font-size: 1.2rem;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -0.4rem;
+    left: 0;
+    height: .12rem;
+    width: 70%;
+    background-color: $mainColor;  
+  }
+}
+
+.btn {
+  background-color: white;
+  transition: all .3s linear;
+  color: $mainColor;
+  font-weight: 500;
+
+  @media (any-hover: hover){
+    &:hover{
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}

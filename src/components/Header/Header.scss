@@ -1,0 +1,179 @@
+$mainColor: #EC3D54;
+
+.header {
+  padding: 2rem 0;
+  
+  @media (max-width:768px){
+    padding: 1rem 0;
+  }
+
+  &__branch {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: $mainColor;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  width: 50%;
+
+  @media (max-width:768px){
+    width: 8%;
+  }
+
+  &__icon {
+    display: block;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    width: 2rem;
+    z-index: 11;
+    display: none;
+
+    span {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      top: 0;
+      background-color: $mainColor;
+      transition: all .3s linear;
+    }
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $mainColor;
+      transition: all .3s linear;
+    }
+
+    &::before {
+      top: -0.5rem;
+    }
+
+    &::after {
+      bottom: -0.5rem;
+    }
+
+    @media (max-width:768px){
+      display: block;
+
+      &--open {
+        span {
+          background-color: #fff;
+          width: 0;
+        }
+
+        &::before {
+          background-color: #fff;
+          transform: rotate(45deg);
+          top: 0;
+        }
+
+        &::after {
+          background-color: #fff;
+          transform: rotate(-45deg);
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+
+    @media (max-width:768px){
+      position: fixed;
+      background-color: $mainColor;
+      justify-content: center;
+      left: -100%;
+      right: 1;
+      top: 0;
+      bottom: 0;
+      flex-direction: column;
+      color: #fff;
+      z-index: 10;
+      transition: all .5s ease-out;
+
+      &--open {
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &__item {
+    @media (max-width:768px){
+      padding: 2rem 0;
+    }
+  }
+
+  &__link {
+    padding: .5rem 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: .12rem;
+      background-color: $mainColor;
+      transition: all .4s linear;
+    }
+
+    @media (any-hover: hover){
+      &:hover{
+        color: $mainColor;
+
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+
+    @media (max-width:768px){
+      font-size: 2.5rem;
+
+      &:hover {
+        color: rgb(90, 90, 90);
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+
+.active {
+  color: #EC3D54;
+
+  &::before {
+    width: 100%;
+  }
+
+  @media (max-width:768px){
+    color: #000;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+

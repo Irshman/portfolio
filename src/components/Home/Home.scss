@@ -1,0 +1,91 @@
+$mainColor: #EC3D54;
+
+.home {
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__name {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+
+    @media (max-width:768px){
+      font-size: 2rem;
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1.8rem;
+
+    @media (max-width:768px){
+      flex-direction: column-reverse;
+      row-gap: 2rem;
+    }
+  }
+
+  &__info {
+    max-width: 50%;
+
+    @media (max-width:768px){
+      max-width: 100%;
+    }
+  }
+
+  &__text {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  &__img {
+    flex: 0 0 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 30px 10px rgba(204,204,204,0.5);
+
+    @media (max-width:768px){
+      margin: 0 auto;
+      flex: none;
+      width: 25rem;
+      height: 25rem;
+    }
+    @media (max-width:425px){
+      width: 15rem;
+      height: 15rem;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.social {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    transition: all .3s ease-out;
+    @media (any-hover: hover){
+      &:hover{
+        transform: scale(1.2);
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}

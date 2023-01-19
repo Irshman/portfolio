@@ -1,0 +1,11 @@
+.portfolio__cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  margin: 3rem 0;
+}
+@media (max-width: 768px) {
+  .portfolio__cards {
+    margin: 1rem 0;
+  }
+}/*# sourceMappingURL=Portfolio.css.map */
