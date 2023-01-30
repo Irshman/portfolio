@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import LazyLoad from 'react-lazy-load';
+import { gsap } from'gsap';
 
 import './Home.scss';
 import myPhoto from '../../img/me.jpg';
@@ -8,7 +9,7 @@ import github from '../../img/github.png';
 import linkedin from '../../img/linkedin.png';
 import telegram from '../../img/telegram.png';
 
-const Home = () => {
+const Home = ({loaded}) => {
   const mySocialLinks = [
     { title: 'gmail', link: 'mailto:zhenyaskvortsov9@gmail.com', icon: gmail },
     { title: 'github', link: 'https://github.com/Irshman', icon: github },
@@ -19,6 +20,14 @@ const Home = () => {
     },
     { title: 'telegram', link: 'https://t.me/Irshman', icon: telegram },
   ];
+
+  useEffect(() => {
+    gsap.fromTo(".home__name", {opacity: 0, y: 200}, {opacity: 1, y: 0, duration: 0.5});
+    gsap.fromTo(".home__title", {opacity: 0, y: 200}, {opacity: 1, y: 0, duration: 1});
+    gsap.fromTo(".home__text", {opacity: 0, y: 100}, {opacity: 1, y: 0, duration: 1.5});
+    gsap.fromTo(".social", {opacity: 0, y: 100}, {opacity: 1, y: 0, duration: 2});
+  }, [loaded])
+
 
   return (
     <section className='home'>

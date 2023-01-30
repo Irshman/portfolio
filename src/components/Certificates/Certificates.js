@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Pagination,  Autoplay } from 'swiper';
 
@@ -7,8 +7,6 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
 import './Certificates.scss';
-
-import photo from '../../img/me.jpg';
 import htmlCss from '../../img/HTML_CSS.png';
 import jsBase from '../../img/JSBase.png';
 import jsAdvanced from '../../img/JSAdvc.png';

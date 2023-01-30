@@ -1,0 +1,16 @@
+$mainColor: #EC3D54;
+
+.notfound {
+  width: 100%;
+  text-align: center;
+  margin-top: 6rem;
+
+  &__title {
+    font-size: 7rem;
+    color: $mainColor;
+  }
+
+  &__text {
+    font-size: 2rem;
+  }
+}

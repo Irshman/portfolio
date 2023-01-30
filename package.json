@@ -2,11 +2,13 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://irshman.github.io/portfolio/",
   "dependencies": {
     "@ramonak/react-progress-bar": "^5.0.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "gsap": "^3.11.4",
     "react": "^18.2.0",
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
@@ -14,16 +16,18 @@
     "react-lazy-load": "^4.0.1",
     "react-loader-spinner": "^5.3.4",
     "react-router-dom": "^6.6.2",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "sass": "^1.57.1",
     "swiper": "^8.4.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
