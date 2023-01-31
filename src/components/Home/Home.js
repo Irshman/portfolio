@@ -26,8 +26,10 @@ const Home = ({loaded}) => {
     gsap.fromTo(".home__title", {opacity: 0, y: 200}, {opacity: 1, y: 0, duration: 1});
     gsap.fromTo(".home__text", {opacity: 0, y: 100}, {opacity: 1, y: 0, duration: 1.5});
     gsap.fromTo(".social", {opacity: 0, y: 100}, {opacity: 1, y: 0, duration: 2});
+    gsap.fromTo(".home__img", {opacity: 0, y: 200}, {opacity: 1, y: 0, duration: 0.5});
   }, [loaded])
 
+  console.log('RENDER')
 
   return (
     <section className='home'>
