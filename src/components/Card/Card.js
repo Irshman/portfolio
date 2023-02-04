@@ -1,5 +1,6 @@
 import React from 'react';
 import { BsArrowUpRight } from 'react-icons/bs'
+import LazyLoad from 'react-lazy-load';
 
 import './Card.scss';
 
@@ -9,7 +10,9 @@ const Card = ({title, tags, data, img, link}) => {
   return (
     <div className="card">
       <div className="card__image card__image">
-          <img src={img} alt={title} />
+          <LazyLoad>
+            <img src={img} alt={title} />
+          </LazyLoad>
       </div>
       <div className="card__content">
         <h3 className="card__title">{title}</h3>

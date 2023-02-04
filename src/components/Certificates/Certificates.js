@@ -11,6 +11,7 @@ import htmlCss from '../../img/HTML_CSS.png';
 import jsBase from '../../img/JSBase.png';
 import jsAdvanced from '../../img/JSAdvc.png';
 import FrontEndAdvanced from '../../img/FrontEnd.png';
+import LazyLoad from 'react-lazy-load';
 
 const Certificates = () => {
   const myCertificates = [
@@ -48,7 +49,7 @@ const Certificates = () => {
           modules={[FreeMode, Pagination, Autoplay]}
           className='mySwiper'>
           {myCertificates.map(item => (<SwiperSlide>
-            <img src={item.src} alt={item.title} />
+          <img src={item.src} alt={item.title} />
           </SwiperSlide>))}
         </Swiper>
       </div>

@@ -47,7 +47,7 @@ const Portfolio = () => {
       id: 4,
       title: 'Konstructor',
       image: konstructor,
-      tags: ['HTML', 'SCSS', 'JS'],
+      tags: ['HTML', 'SCSS', 'JS', 'GSAP'],
       data: 'February 2022',
       link: 'https://irshman.github.io/konstruct/'
     },
@@ -87,7 +87,7 @@ const Portfolio = () => {
       id: 9,
       title: 'Trawelend',
       image: trawelend,
-      tags: ['HTML', 'CSS', 'JS', 'Swiper'],
+      tags: ['HTML', 'CSS', 'JS', 'Swiper', 'GSAP'],
       data: 'Desember 2021',
       link: 'https://irshman.github.io/trevland/'
     },
@@ -97,7 +97,7 @@ const Portfolio = () => {
       image: ghbatle,
       tags: ['React', 'SCSS', 'API', 'Axios'],
       data: 'November 2022',
-      link: 'https://irshman.github.io/popular'
+      link: 'https://irshman.github.io/github-battles/'
     },
     { 
       id: 11,
