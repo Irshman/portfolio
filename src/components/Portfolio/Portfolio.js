@@ -15,6 +15,7 @@ import ghbatle from '../../img/project/gh-battle.png'
 import formvalid from '../../img/project/formvalidate.png'
 import game2848 from '../../img/project/2048.png'
 import organic from '../../img/project/organicfruits.png'
+import furniking from '../../img/project/furniking.png'
 
 
 const Portfolio = () => {
@@ -122,6 +123,14 @@ const Portfolio = () => {
       tags: ['HTML', 'SCSS', 'JS', 'Gulp', 'Swiper'],
       data: 'October 2022',
       link: 'https://irshman.github.io/organic_food/'
+    },
+    { 
+      id: 14,
+      title: 'Furniking',
+      image: furniking,
+      tags: ['React', 'SCSS', 'JS', 'Framer Motion', 'Swiper'],
+      data: 'February 2023',
+      link: 'https://https-irshman-github-io-furniking.vercel.app/'
     },
   ];
 
