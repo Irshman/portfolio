@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1d70a5bc.css",
-    "main.js": "/portfolio/static/js/main.46a3e63c.js",
+    "main.js": "/portfolio/static/js/main.6e5f84c6.js",
     "static/media/travelend.png": "/portfolio/static/media/travelend.4d744fff72a3165f722f.png",
     "static/media/escape.png": "/portfolio/static/media/escape.943ee46f1a8d29a02085.png",
     "static/media/thewether.png": "/portfolio/static/media/thewether.504a96145051afc771d4.png",
@@ -11,6 +11,7 @@
     "static/media/gh-battle.png": "/portfolio/static/media/gh-battle.94e44e195278f307c2e2.png",
     "static/media/freebie.png": "/portfolio/static/media/freebie.12415f646593284c0894.png",
     "static/media/formvalidate.png": "/portfolio/static/media/formvalidate.02d1d30f74d75f0800d4.png",
+    "static/media/furniking.png": "/portfolio/static/media/furniking.6cbf2b964daa8b9f798f.png",
     "static/media/konstructor.png": "/portfolio/static/media/konstructor.1d3ba7c6060a1de3f423.png",
     "static/media/HTML_CSS.png": "/portfolio/static/media/HTML_CSS.14c94a65888cc991528f.png",
     "static/media/JSBase.png": "/portfolio/static/media/JSBase.79135b452c735447d0af.png",
@@ -22,10 +23,10 @@
     "static/media/2048.png": "/portfolio/static/media/2048.055e57ac95c0c37fa80c.png",
     "index.html": "/portfolio/index.html",
     "main.1d70a5bc.css.map": "/portfolio/static/css/main.1d70a5bc.css.map",
-    "main.46a3e63c.js.map": "/portfolio/static/js/main.46a3e63c.js.map"
+    "main.6e5f84c6.js.map": "/portfolio/static/js/main.6e5f84c6.js.map"
   },
   "entrypoints": [
     "static/css/main.1d70a5bc.css",
-    "static/js/main.46a3e63c.js"
+    "static/js/main.6e5f84c6.js"
   ]
 }
