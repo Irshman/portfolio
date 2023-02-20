@@ -16,6 +16,7 @@ import formvalid from '../../img/project/formvalidate.png'
 import game2848 from '../../img/project/2048.png'
 import organic from '../../img/project/organicfruits.png'
 import furniking from '../../img/project/furniking.png'
+import RGym from '../../img/project/Rgym.png'
 
 
 const Portfolio = () => {
@@ -126,6 +127,14 @@ const Portfolio = () => {
     },
     { 
       id: 14,
+      title: 'RGym',
+      image: RGym,
+      tags: ['HTML', 'SCSS', 'JS', 'GSAP', 'Swiper', "Gulp"],
+      data: 'February 2023',
+      link: 'https://rgym-landing.vercel.app/'
+    },
+    { 
+      id: 15,
       title: 'Furniking',
       image: furniking,
       tags: ['React', 'SCSS', 'JS', 'Framer Motion', 'Swiper'],
